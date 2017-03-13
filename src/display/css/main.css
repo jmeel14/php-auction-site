@@ -1,0 +1,428 @@
+.siteCol {
+	background:rgb(200,200,200);
+}
+
+nav {
+	text-align:center;
+}
+
+.notif {
+	text-align:center;
+}
+
+.auction {
+	background:rgb(100,100,100);
+}
+.auctDet {
+	background:rgb(200,200,200);
+}
+
+div.formContain.default {
+    display:none;
+}
+div.formContain.open {
+    display:block;
+}
+
+
+@media screen and (min-width:500px){
+	header {
+		background:-ms-linear-gradient(rgb(255,255,255),rgb(245,245,245)); background:-moz-linear-gradient(rgb(255,255,255),rgb(245,245,245));
+		background:-webkit-linear-gradient(rgb(255,255,255),rgb(245,245,245)); background:-o-linear-gradient(rgb(255,255,255),rgb(245,245,245));
+	}
+	.headerSeg {
+		display:inline-block;
+	}
+	#headerTitle {
+		font:32px 'MS Sans Serif';
+		padding:5px 10px;
+	}
+	#userHead {
+		float:right;
+		text-align:center;
+		padding:5px 10px;
+	}
+	.userDat {
+		display:inline-block;
+	}
+	#user_name_head {
+		font-size:17px;
+		font-family:helvetica,verdana,arial;
+	}
+	.userControl {
+		display:inline-block;
+	}
+	.navElem {
+		display:inline-block;
+		padding:3px 5px;
+		text-align:center;
+	}
+	.navLink {
+		text-decoration:none;
+		font-family:arial; font-size:18px;
+		color:rgb(135,135,135);
+		cursor:pointer;
+	}
+	.navLink:hover {
+		color:rgb(100,100,100);
+		text-decoration:none;
+	}
+	.navDrop {
+		display:none;
+		position:absolute;
+		background:white;
+		box-shadow:0 0 10px rgba(0,0,0,0.5);
+		padding:3px 5px;
+	}
+	.navElem:hover .navDrop {
+		display:block;
+	}
+	.subNav {
+		min-width:72px;
+	}
+	.subNav .navLink {
+		font-size:15px;
+	}
+	
+	.notif {
+		border:solid 2px;
+		-moz-user-select:none; -ms-user-select:none;
+		-o-user-select:none; -webkit-user-select:none;
+		user-select:none;
+		cursor:default;
+	}
+	div.notif.overhead {
+		position:absolute; left:0; right:0;
+		margin-left:auto; margin-right:auto;
+		top:10px;
+		width:75vw;
+		padding:5px 3px;
+	}
+	div.notif.over {
+		width:65vmin; margin:0 auto;
+	}
+	div.notif.under {
+		width:100%;
+		margin:3px 0;
+		padding:2px 5px;
+	}
+	.dropFader {
+		opacity:0;
+		animation: fadeFloat 5s forwards;
+	}
+	.fader {
+		animation: fadeNotif 2s forwards;
+	}
+	
+	.pass {
+		background:rgb(245,255,245);
+		border-color:green; color:green;
+	}
+	.fail {
+		background:rgb(255,245,245);
+		border-color:red; color:red;
+	}
+	.info {
+		background:rgb(245,255,245);
+		border-color:blue; color:blue;
+	}
+	
+	.formContain {
+		width:70vw;
+		margin:0 auto;
+	}
+	
+	#edit_form {
+		background:rgb(235,215,175);
+		border-radius:25px;
+		padding:0 15px;
+	}
+	div#edit_form.hiding {
+		animation:hideForm 1s forwards;
+        cursor:default; 
+        -moz-user-select:none; -ms-user-select:none;
+        -webkit-user-select:none; -o-user-select:none;
+        user-select:none;
+	}
+	
+	.fTitle {
+		text-align:center; font-weight:bold;
+	}
+	
+	.fBlockTitle {
+		text-align:center;
+	}
+	.fBlockInner {
+		text-align:center;
+		padding:5px;
+		margin:15px 0;
+	}
+	.fBlockInner input[type="text"], .fBlockInner input[type="password"], .fBlockInner input[type="email"],.fBlockInner input[type="date"]{
+		text-align:center;
+		width:100%;
+	}
+	.fBlockInner.formDate {
+		background-color:rgb(235,235,235);
+		border-top-left-radius:10px; border-top-right-radius:10px;
+	}
+	
+	.fSubmit input[type="submit"] {
+		margin:0 auto; display:block;
+	}
+	
+	.aucts {
+		text-align:center;
+		width:90%;
+		margin:0 auto;
+	}
+	.auction {
+		display:inline-block; width:350px;
+		box-shadow:0 0 15px rgb(50,50,50);
+		margin:10px 5px;
+		
+		font-family:consolas;
+		word-wrap:break-word;
+		
+		-moz-user-select:none; -ms-user-select:none;
+		-o-user-select:none; -webkit-user-select:none;
+		user-select:none;
+	}
+	.auctTitle {
+		text-align:center;
+		padding:5px 0;
+	}
+	.auctTitle a{
+		font-weight:bold; color:rgb(225,225,225);
+		text-decoration:none; 
+	}
+	.auctDet {
+		border-top-left-radius:15px; border-top-right-radius:15px;
+		padding:5px;
+	}
+	.auctImg {
+		width:95px; height:95px;
+		text-align:center;
+		margin:0 auto; padding:5px;
+		transition:
+			-webkit-transform 0.5s, -ms-transform 0.5s,
+			-moz-transform 0.5s, -o-transform 0.5s,
+			transform 0.5s;
+		
+		box-shadow:0 0 10px rgb(0,0,0) inset;
+		border:solid 1px rgb(150,150,150);
+	}
+	.auctImg:hover{
+		-webkit-transform:scale(1.6);
+		-ms-transform:scale(1.6);
+		-moz-transform:scale(1.6);
+		-o-transform:scale(1.6);
+		transform:scale(1.6);
+	}
+	.auctImg img {
+		width:100%;
+		height:100%;
+	}
+	.auctDesc {
+		font-size:15px;
+	}
+	
+	.auct_controls {
+		width:100%;
+	}
+	.auct_control_btn {
+		display:inline-block;
+		padding:3px 5px;
+		background:rgb(235,235,235); border:solid 1px rgb(95,95,95);
+		cursor:pointer;
+		
+		
+	}
+	.auct_control_btn:hover {
+		background:rgb(250,250,250);
+	}
+    
+    
+    div.tblBidsContain {
+        margin:0 auto;
+    }
+    div.bidsTbl {
+        margin:0 auto;
+		
+    }
+	div.tblRow.tblHead {
+		font-weight:bold;
+	}
+    div.tblDat {
+        display:inline-block;
+		text-align:center;
+		padding:3px 5px;
+		background:rgb(225,225,225);
+    }
+	div.tblRow {
+		height:100%;
+	}
+	div.tblRow.tblHead .tblDat {
+		border-bottom:solid 2px rgb(75,75,75);
+		background:rgb(255,255,255);
+	}
+	div.tblRow.rowLight .tblDat {
+		background:rgb(240,240,240);
+	}
+    div.tblDat.tAucTitle {
+        width:20%;
+    }
+    div.tblDat.tAucDesc {
+        width:55%;
+    }
+    div.tAucBid {
+        background:rgb(245,245,245);
+        width:10%;
+        text-align:center;
+    }
+	div.tBidRem {
+		width:10%;
+	}
+	div.tblDat .tBidRemBtn {
+		background:rgb(255,100,100); border:solid 1px rgb(200,100,100);
+		color:rgb(255,245,245);
+		padding:0 3px;
+	}
+	div.tblDat .tBidRemBtn:hover {
+		background:rgb(240,70,70);
+	}
+    
+    
+	#sFooter {
+		text-align:center; padding:15px 0;
+		color:rgb(150,150,150);
+	}
+}
+@media screen and (max-width:499px){
+	header {
+		position:fixed; top:0; left:0;
+		width:100%;
+		background:-ms-linear-gradient(rgb(255,255,255),rgb(245,245,245)); background:-moz-linear-gradient(rgb(255,255,255),rgb(245,245,245));
+		background:-webkit-linear-gradient(rgb(255,255,255),rgb(245,245,245)); background:-o-linear-gradient(rgb(255,255,255),rgb(245,245,245));
+	}
+	#headerTitle {
+		font-size:30px; text-align:center;
+	}
+	
+	nav {
+		margin-top:45px; font-size:20px;
+	}
+	.navElem a.navLink {
+		width:100%; padding:5px 0;
+		display:block;
+		transition:background 0.4s;
+	}
+	.navElem a.navLink:hover {
+		background:rgb(245,245,245);
+	}
+	.navElem .navDrop {
+		background:rgb(220,220,220);
+		display:none;
+	}
+	.navElem:hover .navDrop {
+		display:block;
+		box-shadow:0 0 15px rgb(75,75,75) inset;
+	}
+	
+	.auction {
+		box-shadow:0 0 10px rgb(85,85,85);
+		background:rgb(100,100,100);
+		margin:10px 25px;
+	}
+	
+	.auctDet {
+		border-top-left-radius:20px;
+		border-top-right-radius:20px;
+		
+		font-size:20px;
+	}
+	
+	.auctImg {
+		width:75%; padding:15px 0;
+		text-align:center;
+		margin:0 auto;
+	}
+	.auctImg img {
+		width:100%;
+	}
+	.auctTitle {
+		padding:3px 0;
+		text-align:center;
+	}
+	.auctTitle a{
+		color:rgb(200,200,200);
+		font-size:20px;
+	}
+	.auctDesc {
+		width:85%;
+		margin:0 auto;
+		font-size:18px;
+	}
+	.auct_controls {
+		text-align:center;
+		padding:5px 0;
+	}
+	#userHead {
+		position:fixed; bottom:0; right:0;
+		width:100%;
+		text-align:center;
+		background:rgb(50,50,50);
+		padding:5px 0;
+		z-index:1;
+	}
+	.userDat {
+		color:rgb(200,200,200);
+	}
+	.userControl {
+	}
+}
+
+@keyframes fadeFloat{
+	0%{
+		top:-50%;
+		opacity:0;
+	}
+	5%{
+		top:0%;
+	}
+	15%{
+		opacity:0.5;
+	}
+	50%{
+		opacity:1;
+	}
+	100%{
+		opacity:0;
+	}
+}
+
+@keyframes fadeNotif {
+	0% {
+		opacity:1;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
+@keyframes showForm {
+	0% {
+		height:0px;
+	}
+	100% {
+		height:100%;
+	}
+}
+
+@keyframes hideForm {
+	0% {
+		height:100%;
+	}
+	100% {
+		height:0px;
+	}
+}
